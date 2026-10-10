@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Michael Chabasinski — Security Manager</title>
+  <title>Michael Chabasinski — Security Operations Manager</title>
+  <meta name="description" content="Security Operations Manager, Dublin. Access control and CCTV systems (C•CURE 9000, Victor, Genetec), UKI security operations centre, vendor and fault management." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;1,300&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
   <style>
@@ -312,15 +313,22 @@
       nav ul { display: none; }
       .projects-grid { grid-template-columns: 1fr; }
     }
+
+    .tsys-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; margin-top: 2.5rem; }
+    .tsys-card { padding: 1.6rem; border: 1px solid var(--border); background: var(--surface); }
+    .tsys-card h3 { font-family: 'Rajdhani', sans-serif; font-weight: 600; font-size: 1.15rem; color: var(--bright); letter-spacing: .04em; margin-bottom: .6rem; }
+    .tsys-card h3::before { content: '▸ '; color: var(--accent); }
+    .tsys-card p { font-size: .92rem; color: var(--text); line-height: 1.65; }
   </style>
 </head>
 <body>
 
   <nav>
-    <div class="nav-logo">MC // SECURITY MGR</div>
+    <div class="nav-logo">MC // SECURITY OPS</div>
     <ul>
       <li><a href="#hero">About</a></li>
       <li><a href="#skills">Skills</a></li>
+      <li><a href="#technical">Systems</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#tech">Tech</a></li>
@@ -334,10 +342,9 @@
     <div class="hero-orb"></div>
     <p class="hero-tag">// PROFILE LOADED</p>
     <h1>Michael<br /><span>Chabasinski</span></h1>
-    <p class="hero-title">Security Manager</p>
-    <div class="iso-badge">ISO 27001 Aligned</div>
+    <p class="hero-title">Security Operations Manager · Access Control &amp; CCTV Systems</p>
     <p class="hero-summary">
-      Security management professional with over 12 years of experience in high-profile global corporate environments — leading teams, deploying enterprise-grade access control systems, and driving security excellence across EMEA. Complemented by QQI qualifications in Payroll, Bookkeeping, and Training &amp; Evaluation.
+      Security operations professional with over 12 years of experience in high-profile corporate environments. I manage the UKI security operations centre and a contract guard force, and I work hands-on with access control and CCTV systems (C•CURE 9000 / iSTAR, Victor, Genetec): triaging faults, managing user permissions, coordinating vendors and keeping systems compliant. I also hold QQI qualifications in Payroll, Bookkeeping, and Training &amp; Evaluation.
     </p>
     <div class="hero-cta">
       <a href="#experience" class="btn btn-primary">View Experience</a>
@@ -347,8 +354,8 @@
     <div class="hero-stats">
       <div><div class="stat-num">12+</div><div class="stat-label">Years in Security</div></div>
       <div><div class="stat-num">4</div><div class="stat-label">Major Employers</div></div>
-      <div><div class="stat-num">EMEA</div><div class="stat-label">Operations Scope</div></div>
-      <div><div class="stat-num">ISO</div><div class="stat-label">27001 Aligned</div></div>
+      <div><div class="stat-num">EMEA</div><div class="stat-label">Alarm Monitoring Scope</div></div>
+      <div><div class="stat-num">UKI</div><div class="stat-label">SOC Managed</div></div>
     </div>
   </section>
 
@@ -359,22 +366,38 @@
     <p class="section-tag">// CORE COMPETENCIES</p>
     <h2>Key <span class="dim">Skills</span></h2>
     <div class="skills-grid">
-      <div class="skill-item">Security Management &amp; Leadership</div>
-      <div class="skill-item">EMEA Operations Support</div>
-      <div class="skill-item">Access Control — C•CURE 9000 &amp; Victor</div>
-      <div class="skill-item">Vendor Management &amp; Collaboration</div>
+      <div class="skill-item">Security Operations &amp; Team Leadership</div>
+      <div class="skill-item">UKI SOC Management &amp; EMEA Alarm Monitoring</div>
+      <div class="skill-item">Access Control — C•CURE 9000 (iSTAR), Victor &amp; Genetec</div>
+      <div class="skill-item">Fault Triage &amp; Vendor Escalation (JCI)</div>
+      <div class="skill-item">CCTV &amp; NVR Administration</div>
+      <div class="skill-item">Network Basics for Security Devices</div>
       <div class="skill-item">Incident Management &amp; Response</div>
-      <div class="skill-item">ISO 27001 Alignment</div>
-      <div class="skill-item">SOC Troubleshooting</div>
-      <div class="skill-item">Recruitment &amp; Team Management</div>
-      <div class="skill-item">Timegate &amp; Gallinet</div>
-      <div class="skill-item">Project Management</div>
-      <div class="skill-item">Loss Prevention &amp; Stock Management</div>
+      <div class="skill-item">Policy, SOP &amp; Audit Compliance</div>
       <div class="skill-item">GDPR Compliance &amp; Data Handling</div>
+      <div class="skill-item">KPI Reporting &amp; Power BI Dashboards</div>
+      <div class="skill-item">Vendor Management &amp; Collaboration</div>
       <div class="skill-item">Emergency Coordination &amp; Crisis Mgmt</div>
-      <div class="skill-item">High-Level Computer Proficiency</div>
-      <div class="skill-item">Payroll Processing &amp; Administration</div>
-      <div class="skill-item">Bookkeeping &amp; Financial Records</div>
+      <div class="skill-item">Training &amp; Team Development</div>
+      <div class="skill-item">Timegate &amp; Gallinet</div>
+      <div class="skill-item">Payroll &amp; Bookkeeping (QQI)</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- TECHNICAL SYSTEMS -->
+  <section id="technical">
+    <p class="section-tag">// TECHNICAL SYSTEMS EXPERIENCE</p>
+    <h2>What I Do <span class="dim">On The Systems</span></h2>
+    <div class="tsys-grid">
+      <div class="tsys-card reveal"><h3>First-Line Fault Triage</h3><p>Electronic security faults are reported to me by officers on site. I assess each one and decide whether it can be fixed on site or must be escalated to the vendor engineer (JCI) or the internal technical team, with evidence and logs.</p></div>
+      <div class="tsys-card reveal"><h3>Access Control Hardware</h3><p>First-entry investigation of iSTAR controllers, readers, locks, RTE devices, break glass units, DSMs and workstations. Controller downloads, iSTAR reboots and controlled power-downs, reader power cycles. Assisted with iSTAR installation and programming.</p></div>
+      <div class="tsys-card reveal"><h3>C•CURE 9000 Administration</h3><p>Manage user permissions for administrator and monitoring operators. Assist with configuration and troubleshooting, including anti-passback (APB) set-up, reader firmware upgrades and iSTAR firmware upgrades.</p></div>
+      <div class="tsys-card reveal"><h3>CCTV &amp; NVR</h3><p>Assess NVR recording status and online cameras, add cameras to the NVR, set camera retention periods, upload certificates, PoE reboots for cameras, NVR shutdowns and power-downs.</p></div>
+      <div class="tsys-card reveal"><h3>Network Coordination</h3><p>Work with the networking team on switch port management for security equipment: supply MAC addresses and request port openings for replacements and changes. Gather the network details a device needs (IP address, subnet mask, gateway, VLAN, DNS/NTP).</p></div>
+      <div class="tsys-card reveal"><h3>Basic Network Troubleshooting</h3><p>Command-line diagnostics (ping, ipconfig, tracert, nslookup, arp) to test cameras, controllers and workstations. IPv4 and IPv6 configuration checks and certificate installation for secure Ethernet connection.</p></div>
+      <div class="tsys-card reveal"><h3>Genetec</h3><p>Assist the wider team with Genetec rollout, mainly user devices, including setting up connections and installing certificates for thick-client use.</p></div>
     </div>
   </section>
 
@@ -393,11 +416,13 @@
         </div>
         <div class="job-company">CIS Security Ltd · Client: <span>Accenture</span></div>
         <ul>
-          <li>Led policy development and enforcement aligned with Accenture SOPs and ISO 27001 standards</li>
+          <li>Manage the UKI security operations centre and a contract guard force, with EMEA alarm monitoring and escalation</li>
+          <li>Triage electronic security faults reported by officers: fix on site, or escalate to JCI or the internal technical team with evidence</li>
+          <li>Led policy development and enforcement aligned with Accenture SOPs and client security standards</li>
           <li>Managed vendors including Johnson Controls International (JCI) and Evolution Security</li>
           <li>Facilitated cross-regional meetings with security managers across EMEA</li>
           <li>Organised and managed security for high-profile events and VIP visits</li>
-          <li>Expert support on C•CURE 9000 and Victor access control systems</li>
+          <li>Hands-on administration of C•CURE 9000 (iSTAR) and Victor: fault investigation, firmware upgrades support, anti-passback configuration, and NVR/camera checks</li>
           <li>Led emergency response coordination and liaison with emergency services</li>
           <li>Conducted training sessions; maintained team training matrix including First Aid and fire marshalling</li>
           <li>Managed operator access: creation, modification, and removal requests</li>
@@ -616,6 +641,20 @@
         <span class="tech-name">Johnson Controls</span>
       </div>
 
+      <div class="tech-card">
+        <svg viewBox="0 0 140 44" xmlns="http://www.w3.org/2000/svg" class="tech-logo">
+          <text x="70" y="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="17" fill="#cdd8e8" text-anchor="middle">C•CURE 9000</text>
+        </svg>
+        <span class="tech-name">C•CURE 9000 / iSTAR</span>
+      </div>
+
+      <div class="tech-card">
+        <svg viewBox="0 0 140 44" xmlns="http://www.w3.org/2000/svg" class="tech-logo">
+          <text x="70" y="29" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="17" fill="#cdd8e8" text-anchor="middle">victor</text>
+        </svg>
+        <span class="tech-name">Victor VMS</span>
+      </div>
+
       <!-- Genetec -->
       <div class="tech-card">
         <svg viewBox="0 0 120 44" xmlns="http://www.w3.org/2000/svg" class="tech-logo">
@@ -653,17 +692,16 @@
     <div class="edu-grid">
       <div class="edu-card reveal"><div class="edu-year">2025</div><div class="edu-name">QQI Level 6 Advanced Bookkeeping</div></div>
       <div class="edu-card reveal"><div class="edu-year">2025</div><div class="edu-name">QQI Level 5 Payroll &amp; Bookkeeping</div></div>
-      <div class="edu-card reveal"><div class="edu-year">PRESENT</div><div class="edu-name">Train the Trainer (Training &amp; Evaluation) QQI Level 6 — Open College</div></div>
+      <div class="edu-card reveal"><div class="edu-year">2025</div><div class="edu-name">Train the Trainer (Training &amp; Evaluation) QQI Level 6 — Open College</div></div>
       <div class="edu-card reveal"><div class="edu-year">2024</div><div class="edu-name">IOSH — Institute of Occupational Safety and Health</div></div>
       <div class="edu-card reveal"><div class="edu-year">2024</div><div class="edu-name">Pre-hospital Emergency Care Council Course — Irish Red Cross</div></div>
       <div class="edu-card reveal"><div class="edu-year">2017</div><div class="edu-name">Security Supervisory Management QQI Level 6</div></div>
-      <div class="edu-card reveal"><div class="edu-year">2015–2016</div><div class="edu-name">CPD Diploma in Professional Cookery — DIT Cathal Brugha Street, Dublin</div></div>
       <div class="edu-card reveal"><div class="edu-year">2009–2011</div><div class="edu-name">Leaving Certificate — Coláiste Eoin, Finglas</div></div>
     </div>
 
     <h2 style="margin-top:3.5rem;">Additional <span class="dim">Training</span></h2>
     <div class="skills-grid">
-      <div class="skill-item">Access Control — C•CURE 9000 &amp; Paxton</div>
+      <div class="skill-item">Access Control Training — C•CURE 9000 &amp; Paxton</div>
       <div class="skill-item">Emergency Response Planning</div>
       <div class="skill-item">Data Protection &amp; GDPR Compliance</div>
       <div class="skill-item">Advanced First Aid &amp; Emergency Care</div>
@@ -692,20 +730,17 @@
       <div class="qr-wrap">
         <p class="section-tag" style="margin-bottom:.8rem; text-align:center;">// Scan to view portfolio</p>
         <div id="qr-code" style="background:white;padding:14px;display:inline-block;"></div>
-        <p class="qr-url">michaelchabainski-del.github.io/michaelchabainski-de1</p>
+        <p class="qr-url">michaelchabasinski.github.io/michaelchabasinski</p>
       </div>
 
       </div>
       <div class="affiliation-badges">
-        <div class="badge iso">ISO 27001 Aligned</div>
-        <div class="badge">ISMA Member</div>
-        <div class="badge">EMEA Security Forums</div>
         <div class="badge">Dublin, Ireland</div>
       </div>
     </div>
   </section>
 
-  <footer>© 2025 MICHAEL CHABASINSKI · SECURITY MANAGER · DUBLIN, IRELAND</footer>
+  <footer>© 2026 MICHAEL CHABASINSKI · SECURITY OPERATIONS MANAGER · DUBLIN, IRELAND</footer>
 
     <script>
     // ── Email (split to avoid Cloudflare encoding) ──
@@ -755,7 +790,7 @@
       var el = document.getElementById('qr-code');
       if (el) {
         new QRCode(el, {
-          text: 'https://michaelchabainski-del.github.io/michaelchabainski-de1/',
+          text: 'https://michaelchabasinski.github.io/michaelchabasinski/',
           width: 160, height: 160,
           colorDark: '#080c12', colorLight: '#ffffff',
           correctLevel: QRCode.CorrectLevel.M
